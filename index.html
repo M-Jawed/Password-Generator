@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Karla:ital,wght@0,200..800;1,200..800&family=Lusitana:wght@400;700&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a <br> <span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <div class="settings">
+            <label for="length" id="passLength">Password <span>Length:</span> </label>
+            <input type="number" name="length" id="length" class="lengthInput"><br>
+            <label for="symbols" id="symbolLabel">Use Symbols?</label>
+            <input type="checkbox" name="symbols" id="symbols"><br>
+            <label for="numbers">Use Numbers?</label>
+            <input type="checkbox" name="numbers" id="numbers">
+            
+        </div>
+        <div class="btns">
+            <button id="passgen">Generate passwords</button>
+        </div>
+        <div class="inputs">
+            <input type="text" name="password" id="input1" class="input" onclick="copyText()" readonly>
+            <input type="text" name="password" id="input2" class="input" onclick="copyText2()" readonly>
+        </div>        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
